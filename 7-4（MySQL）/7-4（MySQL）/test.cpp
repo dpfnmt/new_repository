@@ -1,0 +1,57 @@
+CREATE TABLE teachers(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(20) NOT NULL
+	);
+
+CREATE TABLE classes(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(20) NOT NULL
+	);
+
+CREATE TABLE student(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(20) NOT NULL,
+	class_id INT NOT NULL,
+	FOREIGN KEY(class_id) REFERENCES classes(id)
+	);
+
+SELECT LAST_INSERT_ID();
+
+INSERT INTO classes(name) VALUES('比特50班'), ('比特51班');
+INSERT INTO student(name, class_id) VALUES
+('小A', 2),
+('小B', 1);
+
+DELETE FROM classes WHERE name = '比特50班'; --会失败
+
+DELETE FROM student WHERE name = '小B';
+DELETE FROM classes WHERE name = '比特50班'; --会成功
+
+-- MySQL 不建议使用外键
+
+
+/* CREATE TABLE goods(
+id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '',
+name VARCHAR(30) NOT NULL COMMENT '',
+price INT NOT NULL COMMENT '单位是分',
+category VARCHAR(20) NOT NULL DEFAULT '' COMMENT '',
+provider VARCHAR(50) NOT NULL DEFAULT '' COMMENT ''
+) COMMENT '商品信息';
+
+CREATE TABLE customers(
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '',
+	name VARCHAR(20) NOT NULL COMMENT '',
+	address VARCHAR(100) COMMENT '',
+	email VARCHAR(100) COMMENT '',
+	gender TINYINT NOT NULL COMMENT '0 保密 1 女 2 男',
+	idcard CHAR(18) NOT NULL COMMENT '实名制'
+	) COMMENT '客户信息';
+
+CREATE TABLE purchases(
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '',
+	customer_id INT UNSIGNED NOT NULL COMMENT '',
+	goods_id INT UNSIGNED NOT NULL COMMENT '',
+	num INT NOT NULL DEFAULT 0 COMMENT '',
+	FOREIGN KEY(customer_id) REFERENCES customers(id),
+	FOREIGN KEY(goods_id) REFERENCES goods(id)
+	) COMMENT '订单信息 */
