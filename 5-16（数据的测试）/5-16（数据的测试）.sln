@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5-16（数据的测试）", "5-16（数据的测试）\5-16（数据的测试）.vcxproj", "{14E0F7A6-F2C0-4605-9C89-24D77090FD09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E0F7A6-F2C0-4605-9C89-24D77090FD09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{14E0F7A6-F2C0-4605-9C89-24D77090FD09}.Debug|Win32.Build.0 = Debug|Win32
+		{14E0F7A6-F2C0-4605-9C89-24D77090FD09}.Release|Win32.ActiveCfg = Release|Win32
+		{14E0F7A6-F2C0-4605-9C89-24D77090FD09}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
