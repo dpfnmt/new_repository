@@ -18,25 +18,18 @@ void print(int*a, int n)
 	printf("\n");
 }
 //冒泡排序
-
-void Bubblesort(int* a, int n)
-{
+void Bubblesort(int* a, int n){
 	int end = n - 1;
-	while (end > 0)
-	{
-		for (int i = 0; i < end; i++)
-		{
+	while (end > 0){
+		for (int i = 0; i < end; i++){
 			//比较前一个比后一个大，
-			if (a[i] > a[i + 1])
-			{
+			if (a[i] > a[i + 1]){
 				//进行交换
 				Swep(&a[i], &a[i + 1]);
-
 			}
 		}
 		--end;
-	}
-	
+	}	
 }
 
 
@@ -187,7 +180,7 @@ void AdJustDown(int*a, int n, int root)
 		{
 			break;
 		}
-	}
+	}	
 }
 void HeapSort(int *a, int n)
 {

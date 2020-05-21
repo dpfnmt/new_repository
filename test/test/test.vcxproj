@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C6716AF2-56DD-4428-9385-8619DC3D4599}</ProjectGuid>
+    <ProjectGuid>{D1DDC7A5-8F25-4668-AC8D-3E3F27B0A43C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My520（AVL树_红黑树）</RootNamespace>
+    <RootNamespace>test</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,10 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AVLtree.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AVLtree.h" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
