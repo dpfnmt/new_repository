@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdlib.h>
 #include <stdio.h>
+#include<string.h>
 #include <time.h>
 
 void menu()
@@ -8,12 +9,13 @@ void menu()
 
 	printf("******************************\n");
 	printf("********** 1.game ************\n");
-	printf("********** 0.exit ************\n");
+	printf("********** 0.quit ************\n");
 	printf("******************************\n");
 }
 void game()
 {
 	int rand_num = rand() % 100 + 1;
+	//char s1[30];
 	int input = 0;
 	int count = 0;
 	while (1)
@@ -43,12 +45,13 @@ void game()
 
 int main()
 {
+	
 	int input = 0;
 	srand((unsigned)time(NULL));
 	do
 	{
 		menu();
-		printf("请选择：>");
+		printf("请选择1或者0：>");
 		scanf("%d", &input);
 		switch (input)
 		{

@@ -4,10 +4,11 @@
 
 void menu()
 {
-	printf("******************************\n");
-	printf("*****       1. play      *****\n");
-	printf("*****       0. exit      *****\n");
-	printf("******************************\n");
+	printf("***** 欢迎来到我的扫雷世界 *****\n");
+	printf("********************************\n");
+	printf("*****        1. play       *****\n");
+	printf("*****        0. quit       *****\n");
+	printf("********************************\n");
 }
 
 void game()
@@ -33,7 +34,7 @@ void test()
 	do
 	{
 		menu();
-		printf("请选择:>");
+		printf("请选择1或者0:>");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -44,7 +45,7 @@ void test()
 			printf("退出游戏\n");
 			break;
 		default:
-			printf("选择错误\n");
+			printf("选择错误，请重新选择\n");
 			break;
 		}
 	} while (input);

@@ -83,7 +83,9 @@ void FindMine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 				printf("【 下面为雷的分布地图 】\n");
 				//printf("\n");
 				DisplayBoard(mine, ROW, COL);
-				Sleep(5000);
+				Sleep(3000);
+				printf("\n");
+
 				break;
 			}
 			else
